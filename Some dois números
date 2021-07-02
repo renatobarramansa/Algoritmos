@@ -1,0 +1,16 @@
+Algoritmo "Some dois números"
+
+var
+   n1:inteiro
+   n2:inteiro
+
+
+inicio
+
+      escreval ("Digite o primeiro numero")
+      leia (n1)
+      escreval ("Digite o segundo numero")
+      leia (n2)
+      escreva ("A soma dos dois números é:",n1+n2)
+
+fimalgoritmo
