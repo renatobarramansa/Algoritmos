@@ -1,0 +1,23 @@
+Algoritmo "Nome e telefone"
+// Disciplina   : [Linguagem e Lógica de Programação]
+// Professor   : Antonio Carlos Nicolodi 
+// Descrição   : Aqui você descreve o que o programa faz! (função)
+// Autor(a)    : Nome do(a) aluno(a)
+// Data atual  : 02/07/2021
+
+Var
+// Seção de Declarações das variáveis 
+nome:caracter
+telefone:inteiro
+
+
+Inicio
+// Seção de Comandos, procedimento, funções, operadores, etc... 
+          escreval ("Digite seu nome ")
+          leia (nome)
+          escreval ("Digite seu telefone")
+          leia (telefone)
+          escreval ("O nome que você digitou foi,",nome)
+                    escreval ("O telefone que você digitou foi,",telefone)
+
+Fimalgoritmo
