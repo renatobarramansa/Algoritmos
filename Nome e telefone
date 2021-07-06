@@ -15,6 +15,7 @@ Inicio
           escreval ("Digite seu telefone")
           leia (telefone)
           escreval ("O nome que você digitou foi,",nome)
-                    escreval ("O telefone que você digitou foi,",telefone)
+          escreval ("O telefone que você digitou foi,",telefone)
+          escreval ("O cadastro digitado foi :",nome,telefone)
 
 Fimalgoritmo
