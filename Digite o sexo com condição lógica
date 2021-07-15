@@ -1,0 +1,25 @@
+programa
+{
+	
+	funcao inicio()
+	{
+		caracter sexo
+
+		escreva ("Digite o sexo:\n")
+		leia (sexo)
+
+		se (sexo =='m'){
+			cadeia m  = "masculino"
+			escreva ("O sexo digitado foi  :",m)
+		
+		}se (sexo =='f'){
+			cadeia f = "feminino"
+			escreva ("O sexo digitado foi :", f)
+		
+		}senao se (sexo != 'm' ou sexo !='f' ) {
+			escreva ("Você digitou o carater errado :")
+		
+			
+		}
+}
+}
