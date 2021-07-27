@@ -5,7 +5,7 @@ percentual de alunos reprovados na turma C, o percentual de aprovados na turma D
 escreva:
 a) O número de alunos reprovados na turma C.
 b) O número de alunos reprovados na turma D.
-c) A percentagem de alunos reprovados em relação ao total de alunos das duas turmas.*/
+c) A percentagem de alunos reprovados em relação ao total de alunos das duas turmass.*/
 	funcao inicio()
 	{
 		real percentualTurmaC, percentualTurmaD
