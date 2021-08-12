@@ -13,8 +13,33 @@ programa
 	
 	Sendo assim, elabore um algoritmo que leia a pontuação de cada um dos jogadores citados.
 	Após, verifique e mostre se a equipe foi ou não desclassificada.*/
+	
 	funcao inicio()
 	{
+
+		inteiro joao, chivo, pedro, bola
+
+		escreva ("\nDigite a pontuação de João : ")
+		leia (joao)
+		escreva ("\nDigite a pontuação de Chivo : ")
+		leia (chivo)
+		escreva ("\nDigite a pontuação de Pedro : ")
+		leia (pedro)
+		escreva ("\nDigite a pontuação de Bola : ")
+		leia (bola)
+
+		
+
+		se (joao < (chivo + pedro + bola)/2){
+			
+		}senao se (pedro == 3*bola){
+			
+		}senao se (chico ==0){
+			
+		}senao se (bola <pedro/2 ){
+			
+		}senao se (bola <= joao + chivo){
+			
+		
 		
 	}
-}
