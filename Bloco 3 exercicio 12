@@ -14,8 +14,7 @@ indicado pelo número 0.*/
 		
 		escreva ("Digite um número")
 		leia (n1)
-		
-		enquanto (n1 !=0) {
+	
 			
 		
 		se (n1<0) {
@@ -42,5 +41,5 @@ indicado pelo número 0.*/
 		
 }
 		
-	}
+	
 }
