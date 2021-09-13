@@ -7,13 +7,16 @@ indicado pelo número 0.*/
 
 	funcao inicio()
 	{
-		inteiro n1, res, prodPares = 1, somImp
-
+		inteiro n1, res, prodPares = 1, somImp=0
+		
 				
 		para(inteiro x=1;x<=3;x++) {			
 		
 		escreva ("Digite um número")
 		leia (n1)
+		
+		enquanto (n1 !=0) {
+			
 		
 		se (n1<0) {
 			escreva ("Você deve digitar um número positivo\n")
@@ -28,12 +31,16 @@ indicado pelo número 0.*/
 				prodPares = prodPares * n1
 			}
 
+			se (res !=0){
+				somImp = somImp + n1
+			}
+
 			
 		}
 
 		}
-
-		escreva ("mult pares",prodPares)
+		
+}
+		
 	}
 }
-//Incompleto
