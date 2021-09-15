@@ -1,0 +1,63 @@
+programa
+{
+/*13. Foi realizada uma pesquisa entre os habitantes de uma região. Sendo assim, foram coletados os
+dados de idade, sexo (M/F) e salário.Insira e nomes ou encerre a entrada de dados quando for digitada uma idade
+zero. Faça um algoritmo que informe:
+a) a média de salário dos homens;
+b) a média de salário das mulheres;
+c) a média de salário do grupo;
+d) o homem mais velho;
+e) a mulher mais nova;*/	
+	funcao inicio()
+	{
+		caracter sexo
+		real salario, mediaSalHomem=0.0, medSalGru=0.0, medSalMul=0.0
+		inteiro masc, fem, contMasc=0, contFem=0, homemMaisVelho = 0, mulherMaisNova = 200, idade
+
+		para (inteiro x=0;x<=2;x++){
+			
+			escreva ("Informe a idade")
+			leia (idade)
+			
+			se (idade==0) {
+				pare
+			}
+			
+			escreva ("Informe o sexo")
+			leia (sexo)
+			escreva ("Informe o salario")
+			leia (salario)
+
+			medSalGru = (medSalGru + salario)/x
+			
+			
+			
+			
+			se (sexo == 'M') {			
+				contMasc++
+				mediaSalHomem = (mediaSalHomem + salario)/contMasc
+				
+				se (homemMaisVelho<idade) {
+					homemMaisVelho = idade
+				}
+
+			}
+
+			se (sexo == 'F') {
+				contFem++
+				medSalMul = (medSalMul + salario)/contFem
+				mulherMaisNova = idade
+
+				se (mulherMaisNova < idade){
+					mulherMaisNova = idade
+				}
+				
+			}
+		}
+		escreva (mediaSalHomem,"\n")
+		escreva (medSalGru,"\n")
+		escreva (homemMaisVelho,"\n")
+	}
+	
+
+}
