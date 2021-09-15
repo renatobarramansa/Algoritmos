@@ -1,0 +1,40 @@
+programa
+{
+
+// Alteração feita, fazendo com a estrutura de enquanto, para validação dos inputs
+
+/*/*13. Foi realizada uma pesquisa entre os habitantes de uma região. Sendo assim, foram coletados os
+dados de idade, sexo (M/F) e salário.Encerre a entrada de dados quando for digitada uma idade
+zero. Faça um algoritmo que informe:
+a) a média de salário dos homens;
+b) a média de salário das mulheres;
+c) a média de salário do grupo;
+d) o homem mais velho;
+e) a mulher mais nova;*/		
+	
+	funcao inicio()
+	{
+		inteiro idade=1, Hvelho, Mnova
+		real salario,medSalHom, medSalMul, medSalGru
+		caracter sexo
+
+			
+			enquanto (idade!=0) {	
+			escreva ("Informe a idade :")
+			leia (idade)
+			se (idade ==0) {			
+			pare }
+			
+			escreva ("Informe o sexo :")
+			leia (sexo)
+			
+			se (sexo == 'M' ou sexo == 'F') {
+			escreva ("Informe o salário :")
+			leia (salario)	
+			}
+			}
+			
+		
+			
+	}
+}
