@@ -1,0 +1,4 @@
+/*4. Escreva um algoritmo que leia uma lista de salários dos funcionários de uma empresa. Após, o
+algoritmo deverá aplicar um aumento de 10% somente sobre salários abaixo de R$ 1.500,00.
+Mostrar na tela a lista dos salários.
+*/
