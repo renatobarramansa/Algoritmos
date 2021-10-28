@@ -29,19 +29,17 @@ Brancos: 30 (30%) votos.
 Nulos: 20 (20%) votos.
 Total de votos: 100*/
 	
-	inteiro voto,joao=0, maria=0, marcos=0, branco=0, nulo=0
+	inteiro voto,joao=0, maria=0, marcos=0, branco=0, nulo=0, contVoto=0
 	
 	funcao inicio()
 	{
-
-			montarTela()			
-			
+			montarTela()						
 			}
-
 
 	funcao montarTela (){
 		faca {
 		escreva ("=========Sistema de Eleição=========\n")
+		
 		escreva ("(1) João\n")
 		escreva ("(2) Maria\n")
 		escreva ("(3) Marcos\n")
@@ -49,10 +47,19 @@ Total de votos: 100*/
 		escreva ("(5) Anular o voto\n")
 		escreva ("(6) Finalizar a votação\n")
 		leia(voto)
-		computarVoto()
-		apurarVotacao()
+		contVoto++		
+
+		
+		se (voto ==6) {
+			contVoto--
+		}
+		computarVoto()		
+		
 		
 	}enquanto(voto <6 e voto >=0)	
+
+	apurarVotacao()
+	
 	}
 
 	funcao computarVoto () {
@@ -78,20 +85,29 @@ Total de votos: 100*/
 				nulo++
 				pare
 			} 
-			}
+		}
 
 	funcao apurarVotacao (){
-		se (joao > maria e joao > marcos){
-			escreva ("O candidato João venceu com ",joao," votos")		
-		}
+		inteiro porcJoao = 0, porcMaria=0, porcMarcos=0, porcBrancos=0, porcNulos=0
+		
+		
+			porcJoao = (joao * 100)/contVoto
+			porcMaria = (maria * 100 ) / contVoto
+			porcMarcos = (marcos * 100) / contVoto
+			porcBrancos = (branco * 100) / contVoto
+			porcNulos = (nulo * 100 ) / contVoto
+			
+			escreva ("====== Resultado da eleição ======\n")		
+			escreva ("-----------------------------------\n")
+			escreva ("João :",joao," (",porcJoao,"%) votos.\n")
+			escreva ("Maria :",maria," (",porcMaria,"%) votos.\n")				
+			escreva ("Marcos :",marcos," (",porcMarcos,"%) votos.\n")		
+			escreva ("Brancos :",branco," (",porcBrancos,"%) votos.\n")
+			escreva ("Nulos :",nulo," (",porcNulos,"%) votos.\n")
+			
+		
 
-		se (maria > joao e maria > marcos){
-			escreva ("O candidato Marcos venceu com ",marcos," votos")		
-		}
-
-		se (marcos > maria e marcos > joao){
-			escreva ("O candidato João venceu com ",joao," votos")		
-		}
+		
 	}
 			
 }
