@@ -1,3 +1,4 @@
+
 programa
 {
 	inclua biblioteca Util -->u
@@ -44,7 +45,7 @@ para sair*/
 				}							
 					
 				se (matriz[linha][coluna]=="ocupado"){					
-					escreva ("A linha digitada está incorreta:\nO local escolhido, já foi ocupado")
+					escreva ("O local escolhido, já foi ocupado")
 				}
 				senao {
 					matriz[linha][coluna] = "ocupado"
